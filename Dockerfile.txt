@@ -1,0 +1,22 @@
+FROM openjdk:8u191-jre-alpine3.8
+
+# workspace 
+WORKDIR /usr/ramdeep/workspace
+
+# To install curl and jq in alpine image's container
+RUN apk add curl jq 
+
+# Add .jar under target from host into this image 
+ADD target/selenium-docker.jar 			selenium-docker.jar
+ADD target/selenium-docker-tests.jar 	selenium-docker-tests.jar
+ADD target/libs							libs
+
+# Add suite files in image 
+ADD duckduckgo-searchResults-testng.xml				duckduckgo-searchResults-testng.xml
+ADD newtours-flightBooking-testng.xml				newtours-flightBooking-testng.xml
+
+# Add healthcheck file in image 
+ADD healthcheck.sh									healthcheck.sh
+
+# Browser, HUB_HOST and module are expected while creating container 
+ENTRYPOINT sh healthcheck.sh

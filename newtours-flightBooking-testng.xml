@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flight-Booking-module">
+	<test thread-count="5" name="booking-for-2-people">
+		<parameter name="numberOfPassengers" value="2" />
+		<parameter name="expectedPrice" value="$300 USD" />
+		<classes>
+			<class name="com.docker.newtours.tests.BookFlightTest" />
+		</classes>
+	</test>
+	<test thread-count="5" name="booking-for-3-people">
+		<parameter name="numberOfPassengers" value="3" />
+		<parameter name="expectedPrice" value="$500 USD" />
+		<classes>
+			<class name="com.docker.newtours.tests.BookFlightTest" />
+		</classes>
+	</test>
+</suite> 

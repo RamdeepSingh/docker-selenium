@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [duckduckgo-search-module]" parallel="tests">
+  <test thread-count="5" name="Test 4(failed)" parallel="tests">
+    <parameter name="keyword" value="jsuenshdgcfsaheywiakxlcmahdgdya"/>
+    <classes>
+      <class name="com.docker.duckduckgo.tests.SearchResultTest">
+        <methods>
+          <include name="setupDriver"/>
+          <include name="quitBrowser"/>
+          <include name="search" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.docker.duckduckgo.tests.SearchResultTest -->
+    </classes>
+  </test> <!-- Test 4(failed) -->
+</suite> <!-- Failed suite [duckduckgo-search-module] -->

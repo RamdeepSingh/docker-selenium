@@ -1,0 +1,40 @@
+version: "3"
+services:
+    ramdeep_hub:
+        image: selenium/hub:3.14
+        ports:
+            - "4444:4444"
+    ramdeep_chrome:
+        image: selenium/node-chrome:3.14
+        depends_on: 
+            - ramdeep_hub
+        environment:
+            - HUB_HOST=ramdeep_hub
+    ramdeep_firefox:
+        image: selenium/node-firefox:3.14
+        depends_on: 
+            - ramdeep_hub
+        environment:
+            - HUB_HOST=ramdeep_hub
+    duckduckgo-searchResults-module:
+        image: ramdeepmansa/selenium-docker
+        depends_on:
+            - ramdeep_chrome
+            - ramdeep_firefox 
+        environment:
+            - BROWSER=chrome 
+            - HUB_HOST=ramdeep_hub
+            - MODULE=duckduckgo-searchResults-testng.xml
+        volumes:
+            - ./docker-output:/usr/ramdeep/workspace/test-output
+    newtours-flightBooking-module:
+        image: ramdeepmansa/selenium-docker
+        depends_on:
+            - ramdeep_chrome
+            - ramdeep_firefox 
+        environment:
+            - BROWSER=firefox
+            - HUB_HOST=ramdeep_hub
+            - MODULE=newtours-flightBooking-testng.xml
+        volumes:
+            - ./docker-output1:/usr/ramdeep/workspace/test-output

@@ -1,0 +1,6 @@
+com\docker\newtours\pages\FlightDetailsPage.class
+com\docker\newtours\pages\FindFlightPage.class
+com\docker\newtours\pages\RegistrationConfirmationPage.class
+com\docker\newtours\pages\FlightConfirmationPage.class
+com\docker\duckduckgo\pages\SearchPage.class
+com\docker\newtours\pages\RegistrationPage.class

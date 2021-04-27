@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="duckduckgo-search-module" duration-ms="18286" started-at="2021-04-22T11:56:10 GMT" finished-at="2021-04-22T11:56:29 GMT">
+    <groups>
+    </groups>
+    <test name="Test 4" duration-ms="12900" started-at="2021-04-22T11:56:10 GMT" finished-at="2021-04-22T11:56:23 GMT">
+      <class name="com.docker.duckduckgo.tests.SearchResultTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.docker.duckduckgo.tests.SearchResultTest@c038203]" name="setupDriver" is-config="true" duration-ms="5431" started-at="2021-04-22T11:56:10 GMT" finished-at="2021-04-22T11:56:16 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.docker.duckduckgo.tests.SearchResultTest@c038203]" name="search" duration-ms="7238" started-at="2021-04-22T11:56:16 GMT" finished-at="2021-04-22T11:56:23 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[enjoy the day]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.docker.duckduckgo.tests.SearchResultTest@c038203]" name="quitBrowser" is-config="true" duration-ms="171" started-at="2021-04-22T11:56:23 GMT" finished-at="2021-04-22T11:56:23 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.docker.duckduckgo.tests.SearchResultTest -->
+    </test> <!-- Test 4 -->
+    <test name="Test 3" duration-ms="18286" started-at="2021-04-22T11:56:10 GMT" finished-at="2021-04-22T11:56:29 GMT">
+      <class name="com.docker.duckduckgo.tests.SearchResultTest">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.docker.duckduckgo.tests.SearchResultTest@5c7fa833]" name="setupDriver" is-config="true" duration-ms="5626" started-at="2021-04-22T11:56:10 GMT" finished-at="2021-04-22T11:56:16 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.docker.duckduckgo.tests.SearchResultTest@5c7fa833]" name="search" duration-ms="12593" started-at="2021-04-22T11:56:16 GMT" finished-at="2021-04-22T11:56:29 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Real Madrid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.docker.duckduckgo.tests.SearchResultTest@5c7fa833]" name="quitBrowser" is-config="true" duration-ms="61" started-at="2021-04-22T11:56:29 GMT" finished-at="2021-04-22T11:56:29 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.docker.duckduckgo.tests.SearchResultTest -->
+    </test> <!-- Test 3 -->
+  </suite> <!-- duckduckgo-search-module -->
+</testng-results>
