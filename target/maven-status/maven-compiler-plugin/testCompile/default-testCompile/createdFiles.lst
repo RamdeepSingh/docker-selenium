@@ -1,0 +1,4 @@
+com\docker\newtours\tests\NoAvailableFlightsTest.class
+com\docker\duckduckgo\tests\SearchResultTest.class
+com\docker\base\tests\HelperTest.class
+com\docker\newtours\tests\BookFlightTest.class

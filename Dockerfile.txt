@@ -20,3 +20,4 @@ ADD healthcheck.sh									healthcheck.sh
 
 # Browser, HUB_HOST and module are expected while creating container 
 ENTRYPOINT sh healthcheck.sh
+
