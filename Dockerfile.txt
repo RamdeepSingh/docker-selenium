@@ -17,6 +17,7 @@ ADD newtours-flightBooking-testng.xml				newtours-flightBooking-testng.xml
 
 # Add healthcheck file in image 
 ADD healthcheck.sh									healthcheck.sh
+RUN dos2unix healthcheck.sh
 
 # Browser, HUB_HOST and module are expected while creating container 
 ENTRYPOINT sh healthcheck.sh
